@@ -1,0 +1,988 @@
+2020/10/27-11:26:30 INFO  [main] com.jsh.erp.ErpApplication - Starting ErpApplication on XB-20160901RDOW with PID 3648 (E:\myProject\jshERP\target\classes started by Administrator in E:\myProject\jshERP)
+2020/10/27-11:26:30 DEBUG [main] com.jsh.erp.ErpApplication - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020/10/27-11:26:30 INFO  [main] com.jsh.erp.ErpApplication - No active profile set, falling back to default profiles: default
+2020/10/27-11:26:33 ERROR [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1127)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:356)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2502)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2539)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2321)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:832)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:409)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:417)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:344)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:365)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:194)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:460)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:534)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:601)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:387)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:685)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:166)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89ab82e4.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89ab82e4$$FastClassBySpringCGLIB$$84e45e0f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89ab82e4.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.jsh.erp.ErpApplication.main(ErpApplication.java:15)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:315)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:306)
+	... 90 common frames omitted
+2020/10/27-11:26:34 ERROR [main] org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [E:\myProject\jshERP\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.jsh.erp.ErpApplication.main(ErpApplication.java:15)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountService': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [E:\myProject\jshERP\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountMapper' defined in file [E:\myProject\jshERP\target\classes\com\jsh\erp\datasource\mappers\AccountMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1439)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:513)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:484)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:618)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:177)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:318)
+	... 30 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:587)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1250)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1099)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:502)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:312)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:310)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1424)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:579)
+	... 55 common frames omitted
+Caused by: com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: Error: GlobalConfigUtils setMetaData Fail !  Cause:com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.baomidou.mybatisplus.core.toolkit.ExceptionUtils.mpe(ExceptionUtils.java:51)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.buildSqlSessionFactory(MybatisSqlSessionFactoryBean.java:604)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.afterPropertiesSet(MybatisSqlSessionFactoryBean.java:387)
+	at com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean.getObject(MybatisSqlSessionFactoryBean.java:685)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration.sqlSessionFactory(MybatisPlusAutoConfiguration.java:166)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89ab82e4.CGLIB$sqlSessionFactory$0(<generated>)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89ab82e4$$FastClassBySpringCGLIB$$84e45e0f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:361)
+	at com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration$$EnhancerBySpringCGLIB$$89ab82e4.sqlSessionFactory(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 56 common frames omitted
+2020/10/27-11:28:46 INFO  [main] com.jsh.erp.ErpApplication - Starting ErpApplication on XB-20160901RDOW with PID 8780 (E:\myProject\jshERP\target\classes started by Administrator in E:\myProject\jshERP)
+2020/10/27-11:28:46 DEBUG [main] com.jsh.erp.ErpApplication - Running with Spring Boot v2.0.0.RELEASE, Spring v5.0.4.RELEASE
+2020/10/27-11:28:46 INFO  [main] com.jsh.erp.ErpApplication - No active profile set, falling back to default profiles: default
+2020/10/27-11:28:51 INFO  [main] com.jsh.erp.ErpApplication - Started ErpApplication in 4.826 seconds (JVM running for 5.555)
+2020/10/27-11:29:19 INFO  [http-nio-8080-exec-8] com.jsh.erp.controller.UserController - ============用户登录 login 方法调用开始==============
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==>  Preparing: SELECT id, username, login_name, password, position, department, email, phonenum, ismanager, isystem, Status, description, remark, tenant_id FROM jsh_user WHERE (login_name = ? AND Status = ?) 
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==> Parameters: admin(String), 0(Byte)
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==>  Preparing: SELECT id, username, login_name, password, position, department, email, phonenum, ismanager, isystem, Status, description, remark, tenant_id FROM jsh_user WHERE (login_name = ? AND password = ? AND Status = ?) 
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==> Parameters: admin(String), e10adc3949ba59abbe56e057f20f883e(String), 0(Byte)
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==>  Preparing: SELECT id, username, login_name, password, position, department, email, phonenum, ismanager, isystem, Status, description, remark, tenant_id FROM jsh_user WHERE (login_name = ? AND Status = ?) 
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==> Parameters: admin(String), 0(Byte)
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==>  Preparing: SELECT id, type, key_id, value, btn_str, delete_flag FROM jsh_user_business WHERE (key_id = ? AND type = ? AND delete_flag <> ?) 
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==> Parameters: 120(String), UserRole(String), 1(String)
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.RoleMapper.selectByPrimaryKey - ==>  Preparing: SELECT id, name, type, value, description, tenant_id, delete_flag FROM jsh_role WHERE id = ? 
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.RoleMapper.selectByPrimaryKey - ==> Parameters: 4(Long)
+2020/10/27-11:29:19 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.RoleMapper.selectByPrimaryKey - <==      Total: 1
+2020/10/27-11:29:20 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.LogMapper.insertSelective - ==>  Preparing: INSERT INTO jsh_log (user_id, operation, client_ip, create_time, status, content) VALUES (?, ?, ?, ?, ?, ?) 
+2020/10/27-11:29:20 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.LogMapper.insertSelective - ==> Parameters: 120(Long), 用户(String), 0:0:0:0:0:0:0:1(String), 2020-10-27 11:29:20.025(Timestamp), 0(Byte), 登录admin(String)
+2020/10/27-11:29:20 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.LogMapper.insertSelective - <==    Updates: 1
+2020/10/27-11:29:20 INFO  [http-nio-8080-exec-8] com.jsh.erp.controller.UserController - ===============用户登录 login 方法调用结束===============
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==>  Preparing: SELECT id, type, key_id, value, btn_str, delete_flag FROM jsh_user_business WHERE (key_id = ? AND type = ? AND delete_flag <> ?) 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==> Parameters: 120(String), UserRole(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==>  Preparing: SELECT id, type, key_id, value, btn_str, delete_flag FROM jsh_user_business WHERE (key_id = ? AND type = ? AND delete_flag <> ?) 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==> Parameters: 4(String), RoleFunctions(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 9
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0401(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 2
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 040102(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 040104(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0502(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 3
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 050202(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 050201(String), 1(String)
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:21 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 050204(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0603(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 3
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 060301(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 060303(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 060305(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0801(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 5
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080103(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080105(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080107(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080109(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 080111(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0704(String), 1(String)
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 6
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:22 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070402(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070403(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070404(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070405(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070406(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 070407(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0301(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 11
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030101(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030102(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030103(String), 1(String)
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:23 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030104(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030106(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030107(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030108(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030109(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030110(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030111(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 030112(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0101(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 4
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010101(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010102(String), 1(String)
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:24 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010103(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010104(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0102(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 7
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 01020101(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 01020102(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 01020103(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010202(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010204(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010205(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 010206(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 0001(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 8
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000102(String), 1(String)
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:25 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000103(String), 1(String)
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000108(String), 1(String)
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000104(String), 1(String)
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000105(String), 1(String)
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000105(String), 1(String)
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000106(String), 1(String)
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==>  Preparing: SELECT id, number, name, parent_number, url, state, sort, enabled, type, push_btn, icon, delete_flag FROM jsh_function WHERE (enabled = ? AND parent_number = ? AND delete_flag <> ?) ORDER BY Sort 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - ==> Parameters: true(Boolean), 000107(String), 1(String)
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.FunctionMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:29:26 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==>  Preparing: SELECT id, type, key_id, value, btn_str, delete_flag FROM jsh_user_business WHERE (key_id = ? AND type = ? AND delete_flag <> ?) 
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==> Parameters: 120(String), UserDepot(String), 1(String)
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - ==>  Preparing: SELECT * FROM jsh_system_config WHERE 1 = 1 AND company_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - ==> Parameters: 0(Integer), 100(Integer)
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - <==      Total: 1
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - ==>  Preparing: SELECT COUNT(id) FROM jsh_system_config WHERE 1 = 1 AND company_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - ==> Parameters: 
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - <==      Total: 1
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotMapper.selectByExample - ==>  Preparing: SELECT id, name, address, warehousing, truckage, type, sort, remark, principal, tenant_id, delete_Flag, is_default FROM jsh_depot WHERE (delete_Flag <> ?) ORDER BY sort 
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotMapper.selectByExample - ==> Parameters: 1(String)
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotMapper.selectByExample - <==      Total: 3
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.AccountMapper.selectByExample - ==>  Preparing: SELECT id, name, serial_no, initial_amount, current_amount, remark, is_default, tenant_id, delete_flag FROM jsh_account WHERE (delete_flag <> ?) 
+2020/10/27-11:29:33 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.AccountMapper.selectByExample - ==> Parameters: 1(String)
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.AccountMapper.selectByExample - <==      Total: 2
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.InOutItemMapper.selectByExample - ==>  Preparing: SELECT id, name, type, remark, tenant_id, delete_flag FROM jsh_in_out_item WHERE (type = ? AND delete_flag <> ?) ORDER BY id DESC 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.SupplierMapper.selectByExample - ==>  Preparing: SELECT id, supplier, contacts, phone_num, email, description, isystem, type, enabled, advance_in, begin_need_get, begin_need_pay, all_need_get, all_need_pay, fax, telephone, address, tax_num, bank_name, account_number, tax_rate, tenant_id, delete_flag FROM jsh_supplier WHERE (type LIKE ? AND enabled = ? AND delete_flag <> ?) ORDER BY id DESC 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.InOutItemMapper.selectByExample - ==> Parameters: 支出(String), 1(String)
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.SupplierMapper.selectByExample - ==> Parameters: 会员(String), true(Boolean), 1(String)
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.InOutItemMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - ==>  Preparing: SELECT * FROM jsh_material_property WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.SupplierMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - ==> Parameters: 0(Integer), 100(Integer)
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - <==      Total: 6
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - ==>  Preparing: SELECT COUNT(id) FROM jsh_material_property WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - ==> Parameters: 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.selectByConditionDepotHead - ==>  Preparing: SELECT DISTINCT dh.*, s.supplier OrganName, u.username userName, a.name AccountName FROM jsh_depot_head dh LEFT JOIN jsh_supplier s ON dh.organ_id = s.id AND ifnull(s.delete_Flag, '0') != '1' LEFT JOIN jsh_user u ON dh.creator = u.id AND ifnull(u.Status, '0') = '0' LEFT JOIN jsh_account a ON dh.account_id = a.id AND ifnull(a.delete_Flag, '0') != '1' LEFT JOIN jsh_depot_item di ON dh.id = di.header_id AND ifnull(di.delete_flag, '0') != '1' LEFT JOIN jsh_material m ON di.material_id = m.id AND ifnull(m.delete_flag, '0') != '1' WHERE 1 = 1 AND dh.type = '出库' AND dh.sub_type = '零售' AND ifnull(dh.delete_flag, '0') != '1' ORDER BY dh.id DESC LIMIT ?, ? 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.selectByConditionDepotHead - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - <==      Total: 1
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.selectByConditionDepotHead - <==      Total: 1
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.findMaterialsListByHeaderId - ==>  Preparing: SELECT GROUP_CONCAT(concat(jsh_material.`Name`, ' ', jsh_material.Model)) AS mName FROM jsh_depot_item INNER JOIN jsh_material ON jsh_depot_item.material_id = jsh_material.Id AND ifnull(jsh_material.delete_Flag, '0') != '1' WHERE jsh_depot_item.header_id = 208 AND ifnull(jsh_depot_item.delete_flag, '0') != '1' 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.findMaterialsListByHeaderId - ==> Parameters: 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.findMaterialsListByHeaderId - <==      Total: 1
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.countsByDepotHead - ==>  Preparing: SELECT COUNT(1) FROM (SELECT DISTINCT dh.* FROM jsh_depot_head dh LEFT JOIN jsh_depot_item di ON dh.Id = di.header_id AND ifnull(di.delete_flag, '0') != '1' LEFT JOIN jsh_material m ON di.material_id = m.Id AND ifnull(m.delete_Flag, '0') != '1' WHERE 1 = 1 AND dh.type = '出库' AND dh.sub_type = '零售' AND ifnull(dh.delete_Flag, '0') != '1') tb 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.countsByDepotHead - ==> Parameters: 
+2020/10/27-11:29:34 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.countsByDepotHead - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==>  Preparing: SELECT id, type, key_id, value, btn_str, delete_flag FROM jsh_user_business WHERE (key_id = ? AND type = ? AND delete_flag <> ?) 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - ==> Parameters: 120(String), UserDepot(String), 1(String)
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.UserBusinessMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - ==>  Preparing: SELECT * FROM jsh_system_config WHERE 1 = 1 AND company_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - ==> Parameters: 0(Integer), 100(Integer)
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - ==>  Preparing: SELECT COUNT(id) FROM jsh_system_config WHERE 1 = 1 AND company_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - ==> Parameters: 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.DepotMapper.selectByExample - ==>  Preparing: SELECT id, name, address, warehousing, truckage, type, sort, remark, principal, tenant_id, delete_Flag, is_default FROM jsh_depot WHERE (delete_Flag <> ?) ORDER BY sort 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.DepotMapper.selectByExample - ==> Parameters: 1(String)
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.DepotMapper.selectByExample - <==      Total: 3
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.AccountMapper.selectByExample - ==>  Preparing: SELECT id, name, serial_no, initial_amount, current_amount, remark, is_default, tenant_id, delete_flag FROM jsh_account WHERE (delete_flag <> ?) 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.AccountMapper.selectByExample - ==> Parameters: 1(String)
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.AccountMapper.selectByExample - <==      Total: 2
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.InOutItemMapper.selectByExample - ==>  Preparing: SELECT id, name, type, remark, tenant_id, delete_flag FROM jsh_in_out_item WHERE (type = ? AND delete_flag <> ?) ORDER BY id DESC 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.SupplierMapper.selectByExample - ==>  Preparing: SELECT id, supplier, contacts, phone_num, email, description, isystem, type, enabled, advance_in, begin_need_get, begin_need_pay, all_need_get, all_need_pay, fax, telephone, address, tax_num, bank_name, account_number, tax_rate, tenant_id, delete_flag FROM jsh_supplier WHERE (type LIKE ? AND enabled = ? AND delete_flag <> ?) ORDER BY id DESC 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.InOutItemMapper.selectByExample - ==> Parameters: 支出(String), 1(String)
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.SupplierMapper.selectByExample - ==> Parameters: 会员(String), true(Boolean), 1(String)
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.InOutItemMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - ==>  Preparing: SELECT * FROM jsh_material_property WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.SupplierMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - ==> Parameters: 0(Integer), 100(Integer)
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.selectByConditionDepotHead - ==>  Preparing: SELECT DISTINCT dh.*, s.supplier OrganName, u.username userName, a.name AccountName FROM jsh_depot_head dh LEFT JOIN jsh_supplier s ON dh.organ_id = s.id AND ifnull(s.delete_Flag, '0') != '1' LEFT JOIN jsh_user u ON dh.creator = u.id AND ifnull(u.Status, '0') = '0' LEFT JOIN jsh_account a ON dh.account_id = a.id AND ifnull(a.delete_Flag, '0') != '1' LEFT JOIN jsh_depot_item di ON dh.id = di.header_id AND ifnull(di.delete_flag, '0') != '1' LEFT JOIN jsh_material m ON di.material_id = m.id AND ifnull(m.delete_flag, '0') != '1' WHERE 1 = 1 AND dh.type = '入库' AND dh.sub_type = '零售退货' AND ifnull(dh.delete_flag, '0') != '1' ORDER BY dh.id DESC LIMIT ?, ? 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - <==      Total: 6
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - ==>  Preparing: SELECT COUNT(id) FROM jsh_material_property WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.selectByConditionDepotHead - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - ==> Parameters: 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.selectByConditionDepotHead - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.findMaterialsListByHeaderId - ==>  Preparing: SELECT GROUP_CONCAT(concat(jsh_material.`Name`, ' ', jsh_material.Model)) AS mName FROM jsh_depot_item INNER JOIN jsh_material ON jsh_depot_item.material_id = jsh_material.Id AND ifnull(jsh_material.delete_Flag, '0') != '1' WHERE jsh_depot_item.header_id = 209 AND ifnull(jsh_depot_item.delete_flag, '0') != '1' 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.findMaterialsListByHeaderId - ==> Parameters: 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.findMaterialsListByHeaderId - <==      Total: 1
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.countsByDepotHead - ==>  Preparing: SELECT COUNT(1) FROM (SELECT DISTINCT dh.* FROM jsh_depot_head dh LEFT JOIN jsh_depot_item di ON dh.Id = di.header_id AND ifnull(di.delete_flag, '0') != '1' LEFT JOIN jsh_material m ON di.material_id = m.Id AND ifnull(m.delete_Flag, '0') != '1' WHERE 1 = 1 AND dh.type = '入库' AND dh.sub_type = '零售退货' AND ifnull(dh.delete_Flag, '0') != '1') tb 
+2020/10/27-11:29:39 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.countsByDepotHead - ==> Parameters: 
+2020/10/27-11:29:40 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.DepotHeadMapperEx.countsByDepotHead - <==      Total: 1
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MaterialMapperEx.getMaxBarCode - ==>  Preparing: SELECT max(CAST(l.bar_code AS SIGNED)) bar_code FROM jsh_material_extend l WHERE 1 = 1 AND ifnull(l.delete_Flag, '0') != '1' 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MaterialMapperEx.getMaxBarCode - ==> Parameters: 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MaterialMapperEx.getMaxBarCode - <==      Total: 1
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - ==>  Preparing: SELECT * FROM jsh_material_property WHERE 1 = 1 AND native_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - ==> Parameters: 0(Integer), 100(Integer)
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MaterialMapperEx.getMaterialNameList - ==>  Preparing: SELECT m.name FROM jsh_material m WHERE m.name IS NOT NULL AND m.name != '' AND ifnull(m.delete_flag, '0') != '1' GROUP BY m.name ORDER BY m.name ASC 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MaterialMapperEx.getMaterialNameList - ==> Parameters: 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - <==      Total: 6
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - ==>  Preparing: SELECT COUNT(id) FROM jsh_material_property WHERE 1 = 1 AND native_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - ==> Parameters: 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MaterialMapperEx.getMaterialNameList - <==      Total: 8
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - <==      Total: 1
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - ==>  Preparing: SELECT * FROM jsh_material_property WHERE 1 = 1 AND native_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - ==> Parameters: 0(Integer), 100(Integer)
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.selectByConditionMaterialProperty - <==      Total: 6
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - ==>  Preparing: SELECT COUNT(id) FROM jsh_material_property WHERE 1 = 1 AND native_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - ==> Parameters: 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MaterialPropertyMapperEx.countsByMaterialProperty - <==      Total: 1
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialMapperEx.selectByConditionMaterial - ==>  Preparing: SELECT m.*, u.name unitName, mc.name categoryName, me.bar_code, me.purchase_decimal, me.commodity_decimal, me.wholesale_decimal, me.low_decimal FROM jsh_material m LEFT JOIN jsh_material_extend me ON m.id = me.material_id AND ifnull(me.delete_Flag, '0') != '1' LEFT JOIN jsh_unit u ON m.unit_id = u.id AND ifnull(u.delete_Flag, '0') != '1' LEFT JOIN jsh_material_category mc ON m.category_id = mc.id AND ifnull(mc.status, '0') != '2' WHERE 1 = 1 AND me.default_flag = 1 AND ifnull(m.delete_flag, '0') != '1' ORDER BY m.id DESC LIMIT ?, ? 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UnitMapperEx.selectByConditionUnit - ==>  Preparing: SELECT * FROM jsh_unit WHERE 1 = 1 AND name LIKE '%%' AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialMapperEx.selectByConditionMaterial - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UnitMapperEx.selectByConditionUnit - ==> Parameters: 0(Integer), 100(Integer)
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialMapperEx.selectByConditionMaterial - <==      Total: 8
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==>  Preparing: SELECT id, material_id, depot_id, number, tenant_id, delete_flag FROM jsh_material_initial_stock WHERE (material_id = ? AND delete_flag <> ?) 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UnitMapperEx.selectByConditionUnit - <==      Total: 1
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UnitMapperEx.countsByUnit - ==>  Preparing: SELECT COUNT(id) FROM jsh_unit WHERE 1 = 1 AND name LIKE '%%' AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==> Parameters: 588(Long), 1(String)
+2020/10/27-11:29:47 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UnitMapperEx.countsByUnit - ==> Parameters: 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.UnitMapperEx.countsByUnit - <==      Total: 1
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==>  Preparing: SELECT ifnull(sum(di.basic_number), 0) stockCheckSum FROM jsh_depot_head dh INNER JOIN jsh_depot_item di ON dh.id = di.header_id WHERE 1 = 1 AND di.material_id = ? AND dh.sub_type = '盘点复盘' AND dh.`Status` = '1' AND ifnull(dh.delete_flag, '0') != '1' AND ifnull(di.delete_flag, '0') != '1' 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==> Parameters: 588(Long)
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - <==      Total: 1
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==>  Preparing: select ifnull((curep.inTotal+curep.transfInTotal+curep.assemInTotal+curep.disAssemInTotal),0) as in_stock, ifnull((curep.transfOutTotal+curep.outTotal+curep.assemOutTotal+curep.disAssemOutTotal),0) out_stock from (select sum(if(dh.type='入库' , di.basic_number,0)) as inTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfInTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfOutTotal, sum(if(dh.type='出库' and dh.sub_type!='调拨' ,di.basic_number,0)) as outTotal, sum(if(dh.sub_type='组装单' and di.material_type='组合件' ,di.basic_number,0)) as assemInTotal, sum(if(dh.sub_type='组装单' and di.material_type='普通子件' ,di.basic_number,0)) as assemOutTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='普通子件' ,di.basic_number,0)) as disAssemInTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='组合件' ,di.basic_number,0)) as disAssemOutTotal from jsh_depot_head dh,jsh_depot_item di where 1=1 and dh.id=di.header_id and di.material_id=? and dh.tenant_id=? and di.tenant_id=? and ifnull(dh.delete_flag,'0') !='1' and ifnull(di.delete_flag,'0') !='1') as curep 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==> Parameters: 588(Long), 63(Long), 63(Long)
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - <==      Total: 1
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==>  Preparing: SELECT id, material_id, depot_id, number, tenant_id, delete_flag FROM jsh_material_initial_stock WHERE (material_id = ? AND delete_flag <> ?) 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==> Parameters: 587(Long), 1(String)
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - <==      Total: 1
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==>  Preparing: SELECT ifnull(sum(di.basic_number), 0) stockCheckSum FROM jsh_depot_head dh INNER JOIN jsh_depot_item di ON dh.id = di.header_id WHERE 1 = 1 AND di.material_id = ? AND dh.sub_type = '盘点复盘' AND dh.`Status` = '1' AND ifnull(dh.delete_flag, '0') != '1' AND ifnull(di.delete_flag, '0') != '1' 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==> Parameters: 587(Long)
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - <==      Total: 1
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==>  Preparing: select ifnull((curep.inTotal+curep.transfInTotal+curep.assemInTotal+curep.disAssemInTotal),0) as in_stock, ifnull((curep.transfOutTotal+curep.outTotal+curep.assemOutTotal+curep.disAssemOutTotal),0) out_stock from (select sum(if(dh.type='入库' , di.basic_number,0)) as inTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfInTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfOutTotal, sum(if(dh.type='出库' and dh.sub_type!='调拨' ,di.basic_number,0)) as outTotal, sum(if(dh.sub_type='组装单' and di.material_type='组合件' ,di.basic_number,0)) as assemInTotal, sum(if(dh.sub_type='组装单' and di.material_type='普通子件' ,di.basic_number,0)) as assemOutTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='普通子件' ,di.basic_number,0)) as disAssemInTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='组合件' ,di.basic_number,0)) as disAssemOutTotal from jsh_depot_head dh,jsh_depot_item di where 1=1 and dh.id=di.header_id and di.material_id=? and dh.tenant_id=? and di.tenant_id=? and ifnull(dh.delete_flag,'0') !='1' and ifnull(di.delete_flag,'0') !='1') as curep 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==> Parameters: 587(Long), 63(Long), 63(Long)
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - <==      Total: 1
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==>  Preparing: SELECT id, material_id, depot_id, number, tenant_id, delete_flag FROM jsh_material_initial_stock WHERE (material_id = ? AND delete_flag <> ?) 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==> Parameters: 586(Long), 1(String)
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==>  Preparing: SELECT ifnull(sum(di.basic_number), 0) stockCheckSum FROM jsh_depot_head dh INNER JOIN jsh_depot_item di ON dh.id = di.header_id WHERE 1 = 1 AND di.material_id = ? AND dh.sub_type = '盘点复盘' AND dh.`Status` = '1' AND ifnull(dh.delete_flag, '0') != '1' AND ifnull(di.delete_flag, '0') != '1' 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==> Parameters: 586(Long)
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - <==      Total: 1
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==>  Preparing: select ifnull((curep.inTotal+curep.transfInTotal+curep.assemInTotal+curep.disAssemInTotal),0) as in_stock, ifnull((curep.transfOutTotal+curep.outTotal+curep.assemOutTotal+curep.disAssemOutTotal),0) out_stock from (select sum(if(dh.type='入库' , di.basic_number,0)) as inTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfInTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfOutTotal, sum(if(dh.type='出库' and dh.sub_type!='调拨' ,di.basic_number,0)) as outTotal, sum(if(dh.sub_type='组装单' and di.material_type='组合件' ,di.basic_number,0)) as assemInTotal, sum(if(dh.sub_type='组装单' and di.material_type='普通子件' ,di.basic_number,0)) as assemOutTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='普通子件' ,di.basic_number,0)) as disAssemInTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='组合件' ,di.basic_number,0)) as disAssemOutTotal from jsh_depot_head dh,jsh_depot_item di where 1=1 and dh.id=di.header_id and di.material_id=? and dh.tenant_id=? and di.tenant_id=? and ifnull(dh.delete_flag,'0') !='1' and ifnull(di.delete_flag,'0') !='1') as curep 
+2020/10/27-11:29:48 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==> Parameters: 586(Long), 63(Long), 63(Long)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - <==      Total: 1
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==>  Preparing: SELECT id, material_id, depot_id, number, tenant_id, delete_flag FROM jsh_material_initial_stock WHERE (material_id = ? AND delete_flag <> ?) 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==> Parameters: 579(Long), 1(String)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==>  Preparing: SELECT ifnull(sum(di.basic_number), 0) stockCheckSum FROM jsh_depot_head dh INNER JOIN jsh_depot_item di ON dh.id = di.header_id WHERE 1 = 1 AND di.material_id = ? AND dh.sub_type = '盘点复盘' AND dh.`Status` = '1' AND ifnull(dh.delete_flag, '0') != '1' AND ifnull(di.delete_flag, '0') != '1' 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==> Parameters: 579(Long)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - <==      Total: 1
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==>  Preparing: select ifnull((curep.inTotal+curep.transfInTotal+curep.assemInTotal+curep.disAssemInTotal),0) as in_stock, ifnull((curep.transfOutTotal+curep.outTotal+curep.assemOutTotal+curep.disAssemOutTotal),0) out_stock from (select sum(if(dh.type='入库' , di.basic_number,0)) as inTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfInTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfOutTotal, sum(if(dh.type='出库' and dh.sub_type!='调拨' ,di.basic_number,0)) as outTotal, sum(if(dh.sub_type='组装单' and di.material_type='组合件' ,di.basic_number,0)) as assemInTotal, sum(if(dh.sub_type='组装单' and di.material_type='普通子件' ,di.basic_number,0)) as assemOutTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='普通子件' ,di.basic_number,0)) as disAssemInTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='组合件' ,di.basic_number,0)) as disAssemOutTotal from jsh_depot_head dh,jsh_depot_item di where 1=1 and dh.id=di.header_id and di.material_id=? and dh.tenant_id=? and di.tenant_id=? and ifnull(dh.delete_flag,'0') !='1' and ifnull(di.delete_flag,'0') !='1') as curep 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==> Parameters: 579(Long), 63(Long), 63(Long)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - <==      Total: 1
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==>  Preparing: SELECT id, material_id, depot_id, number, tenant_id, delete_flag FROM jsh_material_initial_stock WHERE (material_id = ? AND delete_flag <> ?) 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==> Parameters: 577(Long), 1(String)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==>  Preparing: SELECT ifnull(sum(di.basic_number), 0) stockCheckSum FROM jsh_depot_head dh INNER JOIN jsh_depot_item di ON dh.id = di.header_id WHERE 1 = 1 AND di.material_id = ? AND dh.sub_type = '盘点复盘' AND dh.`Status` = '1' AND ifnull(dh.delete_flag, '0') != '1' AND ifnull(di.delete_flag, '0') != '1' 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==> Parameters: 577(Long)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - <==      Total: 1
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==>  Preparing: select ifnull((curep.inTotal+curep.transfInTotal+curep.assemInTotal+curep.disAssemInTotal),0) as in_stock, ifnull((curep.transfOutTotal+curep.outTotal+curep.assemOutTotal+curep.disAssemOutTotal),0) out_stock from (select sum(if(dh.type='入库' , di.basic_number,0)) as inTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfInTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfOutTotal, sum(if(dh.type='出库' and dh.sub_type!='调拨' ,di.basic_number,0)) as outTotal, sum(if(dh.sub_type='组装单' and di.material_type='组合件' ,di.basic_number,0)) as assemInTotal, sum(if(dh.sub_type='组装单' and di.material_type='普通子件' ,di.basic_number,0)) as assemOutTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='普通子件' ,di.basic_number,0)) as disAssemInTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='组合件' ,di.basic_number,0)) as disAssemOutTotal from jsh_depot_head dh,jsh_depot_item di where 1=1 and dh.id=di.header_id and di.material_id=? and dh.tenant_id=? and di.tenant_id=? and ifnull(dh.delete_flag,'0') !='1' and ifnull(di.delete_flag,'0') !='1') as curep 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==> Parameters: 577(Long), 63(Long), 63(Long)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - <==      Total: 1
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==>  Preparing: SELECT id, material_id, depot_id, number, tenant_id, delete_flag FROM jsh_material_initial_stock WHERE (material_id = ? AND delete_flag <> ?) 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==> Parameters: 570(Long), 1(String)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==>  Preparing: SELECT ifnull(sum(di.basic_number), 0) stockCheckSum FROM jsh_depot_head dh INNER JOIN jsh_depot_item di ON dh.id = di.header_id WHERE 1 = 1 AND di.material_id = ? AND dh.sub_type = '盘点复盘' AND dh.`Status` = '1' AND ifnull(dh.delete_flag, '0') != '1' AND ifnull(di.delete_flag, '0') != '1' 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==> Parameters: 570(Long)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - <==      Total: 1
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==>  Preparing: select ifnull((curep.inTotal+curep.transfInTotal+curep.assemInTotal+curep.disAssemInTotal),0) as in_stock, ifnull((curep.transfOutTotal+curep.outTotal+curep.assemOutTotal+curep.disAssemOutTotal),0) out_stock from (select sum(if(dh.type='入库' , di.basic_number,0)) as inTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfInTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfOutTotal, sum(if(dh.type='出库' and dh.sub_type!='调拨' ,di.basic_number,0)) as outTotal, sum(if(dh.sub_type='组装单' and di.material_type='组合件' ,di.basic_number,0)) as assemInTotal, sum(if(dh.sub_type='组装单' and di.material_type='普通子件' ,di.basic_number,0)) as assemOutTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='普通子件' ,di.basic_number,0)) as disAssemInTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='组合件' ,di.basic_number,0)) as disAssemOutTotal from jsh_depot_head dh,jsh_depot_item di where 1=1 and dh.id=di.header_id and di.material_id=? and dh.tenant_id=? and di.tenant_id=? and ifnull(dh.delete_flag,'0') !='1' and ifnull(di.delete_flag,'0') !='1') as curep 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==> Parameters: 570(Long), 63(Long), 63(Long)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - <==      Total: 1
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==>  Preparing: SELECT id, material_id, depot_id, number, tenant_id, delete_flag FROM jsh_material_initial_stock WHERE (material_id = ? AND delete_flag <> ?) 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==> Parameters: 569(Long), 1(String)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==>  Preparing: SELECT ifnull(sum(di.basic_number), 0) stockCheckSum FROM jsh_depot_head dh INNER JOIN jsh_depot_item di ON dh.id = di.header_id WHERE 1 = 1 AND di.material_id = ? AND dh.sub_type = '盘点复盘' AND dh.`Status` = '1' AND ifnull(dh.delete_flag, '0') != '1' AND ifnull(di.delete_flag, '0') != '1' 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==> Parameters: 569(Long)
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - <==      Total: 1
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==>  Preparing: select ifnull((curep.inTotal+curep.transfInTotal+curep.assemInTotal+curep.disAssemInTotal),0) as in_stock, ifnull((curep.transfOutTotal+curep.outTotal+curep.assemOutTotal+curep.disAssemOutTotal),0) out_stock from (select sum(if(dh.type='入库' , di.basic_number,0)) as inTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfInTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfOutTotal, sum(if(dh.type='出库' and dh.sub_type!='调拨' ,di.basic_number,0)) as outTotal, sum(if(dh.sub_type='组装单' and di.material_type='组合件' ,di.basic_number,0)) as assemInTotal, sum(if(dh.sub_type='组装单' and di.material_type='普通子件' ,di.basic_number,0)) as assemOutTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='普通子件' ,di.basic_number,0)) as disAssemInTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='组合件' ,di.basic_number,0)) as disAssemOutTotal from jsh_depot_head dh,jsh_depot_item di where 1=1 and dh.id=di.header_id and di.material_id=? and dh.tenant_id=? and di.tenant_id=? and ifnull(dh.delete_flag,'0') !='1' and ifnull(di.delete_flag,'0') !='1') as curep 
+2020/10/27-11:29:49 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==> Parameters: 569(Long), 63(Long), 63(Long)
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - <==      Total: 1
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==>  Preparing: SELECT id, material_id, depot_id, number, tenant_id, delete_flag FROM jsh_material_initial_stock WHERE (material_id = ? AND delete_flag <> ?) 
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - ==> Parameters: 568(Long), 1(String)
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialInitialStockMapper.selectByExample - <==      Total: 0
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==>  Preparing: SELECT ifnull(sum(di.basic_number), 0) stockCheckSum FROM jsh_depot_head dh INNER JOIN jsh_depot_item di ON dh.id = di.header_id WHERE 1 = 1 AND di.material_id = ? AND dh.sub_type = '盘点复盘' AND dh.`Status` = '1' AND ifnull(dh.delete_flag, '0') != '1' AND ifnull(di.delete_flag, '0') != '1' 
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - ==> Parameters: 568(Long)
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockCheckSum - <==      Total: 1
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==>  Preparing: select ifnull((curep.inTotal+curep.transfInTotal+curep.assemInTotal+curep.disAssemInTotal),0) as in_stock, ifnull((curep.transfOutTotal+curep.outTotal+curep.assemOutTotal+curep.disAssemOutTotal),0) out_stock from (select sum(if(dh.type='入库' , di.basic_number,0)) as inTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfInTotal, sum(if(dh.sub_type='调拨' ,di.basic_number,0)) as transfOutTotal, sum(if(dh.type='出库' and dh.sub_type!='调拨' ,di.basic_number,0)) as outTotal, sum(if(dh.sub_type='组装单' and di.material_type='组合件' ,di.basic_number,0)) as assemInTotal, sum(if(dh.sub_type='组装单' and di.material_type='普通子件' ,di.basic_number,0)) as assemOutTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='普通子件' ,di.basic_number,0)) as disAssemInTotal, sum(if(dh.sub_type='拆卸单' and di.material_type='组合件' ,di.basic_number,0)) as disAssemOutTotal from jsh_depot_head dh,jsh_depot_item di where 1=1 and dh.id=di.header_id and di.material_id=? and dh.tenant_id=? and di.tenant_id=? and ifnull(dh.delete_flag,'0') !='1' and ifnull(di.delete_flag,'0') !='1') as curep 
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - ==> Parameters: 568(Long), 63(Long), 63(Long)
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.DepotItemMapperEx.getStockByParam - <==      Total: 1
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialMapperEx.countsByMaterial - ==>  Preparing: SELECT COUNT(m.id) FROM jsh_material m LEFT JOIN jsh_material_extend me ON m.id = me.material_id AND ifnull(me.delete_Flag, '0') != '1' LEFT JOIN jsh_unit u ON m.unit_id = u.id AND ifnull(u.delete_Flag, '0') != '1' LEFT JOIN jsh_material_category mc ON m.category_id = mc.id AND ifnull(mc.status, '0') != '2' WHERE 1 = 1 AND me.default_flag = 1 AND ifnull(m.delete_flag, '0') != '1' 
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialMapperEx.countsByMaterial - ==> Parameters: 
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MaterialMapperEx.countsByMaterial - <==      Total: 1
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.UnitMapperEx.selectByConditionUnit - ==>  Preparing: SELECT * FROM jsh_unit WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.UnitMapperEx.selectByConditionUnit - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.UnitMapperEx.selectByConditionUnit - <==      Total: 1
+2020/10/27-11:29:50 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.UnitMapperEx.countsByUnit - ==>  Preparing: SELECT COUNT(id) FROM jsh_unit WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:29:51 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.UnitMapperEx.countsByUnit - ==> Parameters: 
+2020/10/27-11:29:51 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.UnitMapperEx.countsByUnit - <==      Total: 1
+2020/10/27-11:29:52 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SerialNumberMapperEx.selectByConditionSerialNumber - ==>  Preparing: SELECT ser.id, ser.material_id, ser.serial_number, ser.is_sell, ser.remark, ser.delete_flag, ser.create_time, ser.update_time, mat.name AS materialName, NULL AS creator, NULL AS updater, NULL AS creatorName, NULL AS updaterName, ser.depot_head_id, dh.number AS depotHeadNumber, concat(dh.sub_type, dh.type) AS depotHeadType FROM jsh_serial_number ser LEFT JOIN jsh_material mat ON mat.id = ser.material_Id AND ifnull(mat.delete_flag, '0') != '1' LEFT JOIN jsh_depot_head dh ON dh.id = ser.depot_head_id AND ifnull(dh.delete_flag, '0') != '1' WHERE 1 = 1 AND ifnull(ser.delete_flag, '0') != '1' ORDER BY ser.id DESC LIMIT ?, ? 
+2020/10/27-11:29:52 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SerialNumberMapperEx.selectByConditionSerialNumber - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-11:29:52 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SerialNumberMapperEx.selectByConditionSerialNumber - <==      Total: 3
+2020/10/27-11:29:52 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SerialNumberMapperEx.countSerialNumber - ==>  Preparing: SELECT COUNT(ser.id) FROM jsh_serial_number ser LEFT JOIN jsh_material mat ON mat.id = ser.material_Id AND ifnull(mat.delete_flag, '0') != '1' WHERE 1 = 1 AND ifnull(ser.delete_flag, '0') != '1' ORDER BY ser.id DESC 
+2020/10/27-11:29:52 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SerialNumberMapperEx.countSerialNumber - ==> Parameters: 
+2020/10/27-11:29:53 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SerialNumberMapperEx.countSerialNumber - <==      Total: 1
+2020/10/27-11:30:26 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:30:26 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:30:26 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:30:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNodeTree - ==>  Preparing: SELECT id, org_abr, org_no, ? AS currentId FROM jsh_organization WHERE org_parent_no = -1 AND ifnull(org_stcd, '0') != '5' ORDER BY sort ASC 
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNodeTree - ==> Parameters: null
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - ====>  Preparing: SELECT id, org_abr, org_no, ? AS currentId FROM jsh_organization WHERE org_parent_no = ? AND ifnull(org_stcd, '0') != '5' ORDER BY sort ASC 
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - ====> Parameters: null, 001(String)
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - ======>  Preparing: SELECT id, org_abr, org_no, ? AS currentId FROM jsh_organization WHERE org_parent_no = ? AND ifnull(org_stcd, '0') != '5' ORDER BY sort ASC 
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - ======> Parameters: null, jg1(String)
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - ========>  Preparing: SELECT id, org_abr, org_no, ? AS currentId FROM jsh_organization WHERE org_parent_no = ? AND ifnull(org_stcd, '0') != '5' ORDER BY sort ASC 
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - ========> Parameters: null, 12(String)
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - <========      Total: 0
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - <======      Total: 1
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNextNodeTree - <====      Total: 1
+2020/10/27-11:30:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.OrganizationMapperEx.getNodeTree - <==      Total: 1
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - ==>  Preparing: SELECT * FROM jsh_system_config WHERE 1 = 1 AND company_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - ==> Parameters: 0(Integer), 100(Integer)
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - <==      Total: 1
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - ==>  Preparing: SELECT COUNT(id) FROM jsh_system_config WHERE 1 = 1 AND company_name LIKE '%%' AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - ==> Parameters: 
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - <==      Total: 1
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserMapperEx.selectByConditionUser - ==>  Preparing: SELECT user.id, user.username, user.login_name, user.position, user.email, user.phonenum, user.description, user.remark, user.isystem, org.id AS orgaId, user.tenant_id, org.org_abr, rel.user_blng_orga_dspl_seq, rel.id AS orgaUserRelId, tb.roleName FROM jsh_user user LEFT JOIN (SELECT ub.*, r.name roleName FROM jsh_user_business ub INNER JOIN jsh_role r ON ub.value = concat("[", r.id, "]") AND ifnull(r.delete_flag, '0') != '1' WHERE ub.type = 'UserRole') tb ON tb.key_id = user.id LEFT JOIN jsh_orga_user_rel rel ON user.id = rel.user_id AND ifnull(rel.delete_flag, '0') != '1' LEFT JOIN jsh_organization org ON rel.orga_id = org.id AND ifnull(org.org_stcd, '0') != '5' WHERE 1 = 1 AND ifnull(user.status, '0') NOT IN ('1', '2') ORDER BY rel.user_blng_orga_dspl_seq, user.id DESC LIMIT ?, ? 
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserMapperEx.selectByConditionUser - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserMapperEx.selectByConditionUser - <==      Total: 3
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserMapperEx.countsByUser - ==>  Preparing: SELECT count(user.id) FROM jsh_user user LEFT JOIN jsh_user_business ub ON user.id = ub.key_id LEFT JOIN jsh_role r ON ub.value = concat("[", r.id, "]") AND ifnull(r.delete_flag, '0') != '1' LEFT JOIN jsh_orga_user_rel rel ON user.id = rel.user_id AND ifnull(rel.delete_flag, '0') != '1' LEFT JOIN jsh_organization org ON rel.orga_id = org.id AND ifnull(org.org_stcd, '0') != '5' WHERE 1 = 1 AND ifnull(user.status, '0') NOT IN ('1', '2') AND ub.type = 'UserRole' 
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserMapperEx.countsByUser - ==> Parameters: 
+2020/10/27-11:30:30 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.UserMapperEx.countsByUser - <==      Total: 1
+2020/10/27-11:31:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:31:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:31:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:32:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:32:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:32:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:33:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:33:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:33:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:34:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:34:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:34:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:35:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:35:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:35:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:36:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:36:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:36:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:37:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:37:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:37:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:38:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:38:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:38:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:39:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:39:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:39:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:40:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:40:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:40:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:41:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:41:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:41:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:42:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:42:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:42:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:43:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:43:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:43:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:44:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:44:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:44:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:45:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:45:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:45:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:46:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:46:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:46:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:47:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:47:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:47:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:48:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:48:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:48:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:49:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:49:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:49:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:50:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:50:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:50:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:51:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:51:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:51:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:52:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:52:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:52:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:53:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:53:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:53:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:54:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:54:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:54:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:55:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:55:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:55:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:56:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:56:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:56:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:57:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:57:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:57:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:58:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:58:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:58:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-11:59:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-11:59:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-11:59:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:00:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:00:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:00:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:01:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:01:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:01:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:02:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:02:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:02:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:03:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:03:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:03:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:04:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:04:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:04:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:05:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:05:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:05:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:06:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:06:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:06:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:07:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:07:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:07:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:08:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:08:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:08:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:09:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:09:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:09:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:10:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:10:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:10:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:11:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:11:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:11:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:12:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:12:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:12:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:13:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:13:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:13:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:14:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:14:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:14:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:15:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:15:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:15:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:16:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:16:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:16:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:17:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:17:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:17:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:18:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:18:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:18:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:19:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:19:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:19:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:20:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:20:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:20:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:21:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:21:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:21:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:22:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:22:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:22:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:23:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:23:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:23:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:24:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:24:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:24:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:25:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:25:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:25:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:26:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:26:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:26:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:27:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:27:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:27:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:28:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:28:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:28:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:29:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:29:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:29:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:30:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:30:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:30:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:31:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:31:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:31:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:32:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:32:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:32:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:33:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:33:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:33:28 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:34:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:34:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:34:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:35:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:35:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:35:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:36:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:36:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:36:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:37:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:37:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:37:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:38:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:38:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:38:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:39:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:39:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:39:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:40:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:40:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:40:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:41:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:41:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:41:27 DEBUG [http-nio-8080-exec-2] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:42:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:42:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:42:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:43:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:43:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:43:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:44:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:44:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:44:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.RoleMapperEx.selectByConditionRole - ==>  Preparing: SELECT * FROM jsh_role WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.RoleMapperEx.selectByConditionRole - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.RoleMapperEx.selectByConditionRole - <==      Total: 5
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.RoleMapperEx.countsByRole - ==>  Preparing: SELECT COUNT(id) FROM jsh_role WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.RoleMapperEx.countsByRole - ==> Parameters: 
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.RoleMapperEx.countsByRole - <==      Total: 1
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.LogMapperEx.selectByConditionLog - ==>  Preparing: SELECT l.*, u.username userName FROM jsh_log l LEFT JOIN jsh_user u ON l.user_id = u.id AND ifnull(u.status, '0') NOT IN ('1', '2') WHERE 1 = 1 ORDER BY l.create_time DESC LIMIT ?, ? 
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==>  Preparing: SELECT id, username, login_name, password, position, department, email, phonenum, ismanager, isystem, Status, description, remark, tenant_id FROM jsh_user WHERE (Status = ?) 
+2020/10/27-12:44:44 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.LogMapperEx.selectByConditionLog - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-12:44:45 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - ==> Parameters: 0(Byte)
+2020/10/27-12:44:45 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.LogMapperEx.selectByConditionLog - <==      Total: 1
+2020/10/27-12:44:45 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.LogMapperEx.countsByLog - ==>  Preparing: SELECT COUNT(1) FROM jsh_log l LEFT JOIN jsh_user u ON l.user_id = u.id AND ifnull(u.status, '0') NOT IN ('1', '2') WHERE 1 = 1 
+2020/10/27-12:44:45 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.UserMapper.selectByExample - <==      Total: 3
+2020/10/27-12:44:45 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.LogMapperEx.countsByLog - ==> Parameters: 
+2020/10/27-12:44:45 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.LogMapperEx.countsByLog - <==      Total: 1
+2020/10/27-12:44:48 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - ==>  Preparing: SELECT * FROM jsh_system_config WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' LIMIT ?, ? 
+2020/10/27-12:44:48 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-12:44:49 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.selectByConditionSystemConfig - <==      Total: 1
+2020/10/27-12:44:49 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - ==>  Preparing: SELECT COUNT(id) FROM jsh_system_config WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-12:44:49 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - ==> Parameters: 
+2020/10/27-12:44:49 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.SystemConfigMapperEx.countsBySystemConfig - <==      Total: 1
+2020/10/27-12:44:54 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.FunctionMapperEx.selectByConditionFunction - ==>  Preparing: SELECT * FROM jsh_function WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' ORDER BY sort ASC LIMIT ?, ? 
+2020/10/27-12:44:54 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.FunctionMapperEx.selectByConditionFunction - ==> Parameters: 0(Integer), 15(Integer)
+2020/10/27-12:44:54 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.FunctionMapperEx.selectByConditionFunction - <==      Total: 15
+2020/10/27-12:44:54 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.FunctionMapperEx.countsByFunction - ==>  Preparing: SELECT COUNT(id) FROM jsh_function WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-12:44:54 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.FunctionMapperEx.countsByFunction - ==> Parameters: 
+2020/10/27-12:44:54 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.FunctionMapperEx.countsByFunction - <==      Total: 1
+2020/10/27-12:45:13 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.FunctionMapperEx.selectByConditionFunction - ==>  Preparing: SELECT * FROM jsh_function WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' ORDER BY sort ASC LIMIT ?, ? 
+2020/10/27-12:45:13 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.FunctionMapperEx.selectByConditionFunction - ==> Parameters: 15(Integer), 15(Integer)
+2020/10/27-12:45:13 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.FunctionMapperEx.selectByConditionFunction - <==      Total: 15
+2020/10/27-12:45:13 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.FunctionMapperEx.countsByFunction - ==>  Preparing: SELECT COUNT(id) FROM jsh_function WHERE 1 = 1 AND ifnull(delete_flag, '0') != '1' 
+2020/10/27-12:45:13 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.FunctionMapperEx.countsByFunction - ==> Parameters: 
+2020/10/27-12:45:13 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.FunctionMapperEx.countsByFunction - <==      Total: 1
+2020/10/27-12:45:26 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:45:26 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:45:26 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:46:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:46:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:46:27 DEBUG [http-nio-8080-exec-7] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:47:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:47:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:47:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:48:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:48:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:48:27 DEBUG [http-nio-8080-exec-4] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNodeTree - ==>  Preparing: SELECT id, name, ? AS currentId FROM jsh_material_category WHERE parent_id = -1 AND ifnull(status, '0') != '2' ORDER BY sort ASC 
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNodeTree - ==> Parameters: null
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNextNodeTree - ====>  Preparing: SELECT id, name, ? AS currentId FROM jsh_material_category WHERE parent_id = ? AND ifnull(status, '0') != '2' ORDER BY sort ASC 
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNextNodeTree - ====> Parameters: null, 17(Long)
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNextNodeTree - ======>  Preparing: SELECT id, name, ? AS currentId FROM jsh_material_category WHERE parent_id = ? AND ifnull(status, '0') != '2' ORDER BY sort ASC 
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNextNodeTree - ======> Parameters: null, 21(Long)
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNextNodeTree - <======      Total: 0
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNextNodeTree - <====      Total: 1
+2020/10/27-12:48:39 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MaterialCategoryMapperEx.getNodeTree - <==      Total: 1
+2020/10/27-12:49:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:49:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:49:26 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:50:26 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:50:26 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:50:26 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:51:26 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:51:26 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:51:26 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:52:26 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:52:26 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:52:26 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:53:26 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:53:26 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:53:26 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:54:26 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:54:26 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:54:26 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:55:26 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:55:26 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:55:26 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:56:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:56:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:56:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:57:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:57:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:57:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:58:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:58:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:58:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-12:59:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-12:59:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-12:59:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:00:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:00:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:00:28 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:01:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:01:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:01:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:02:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:02:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:02:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:03:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:03:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:03:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:04:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:04:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:04:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:05:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:05:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:05:27 DEBUG [http-nio-8080-exec-1] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:06:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:06:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:06:27 DEBUG [http-nio-8080-exec-3] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:07:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:07:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:07:27 DEBUG [http-nio-8080-exec-8] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:08:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:08:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:08:27 DEBUG [http-nio-8080-exec-5] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:09:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:09:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:09:27 DEBUG [http-nio-8080-exec-10] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:10:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:10:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:10:27 DEBUG [http-nio-8080-exec-9] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
+2020/10/27-13:11:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==>  Preparing: SELECT COUNT(id) FROM jsh_msg WHERE 1 = 1 AND ifnull(delete_Flag, '0') != '1' AND status = '1' 
+2020/10/27-13:11:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - ==> Parameters: 
+2020/10/27-13:11:27 DEBUG [http-nio-8080-exec-6] com.jsh.erp.datasource.mappers.MsgMapperEx.getMsgCountByStatus - <==      Total: 1
